@@ -1,6 +1,6 @@
 %define module 	XML-Simple
 %define	name	perl-%{module}
-%define version 2.16
+%define version 2.17
 %define release %mkrel 1
 
 Summary:	Easy API to maintain XML (esp config files)
@@ -43,5 +43,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{perl_vendorlib}/XML
 %{_mandir}/*/*
-
-
