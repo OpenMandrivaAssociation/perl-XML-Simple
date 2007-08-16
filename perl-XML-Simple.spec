@@ -1,12 +1,12 @@
 %define module 	XML-Simple
 %define	name	perl-%{module}
-%define version 2.17
+%define version 2.18
 %define release %mkrel 1
 
-Summary:	Easy API to maintain XML (esp config files)
 Name: 		%{name}
 Version: 	%{version}
 Release: 	%{release}
+Summary:	Easy API to maintain XML (esp config files)
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
@@ -14,7 +14,6 @@ Source:     http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.b
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
-BuildRequires:	perl(XML::SAX::Expat)
 BuildArch:  	noarch
 BuildRoot:  	%{_tmppath}/%{name}-%{version}
 
