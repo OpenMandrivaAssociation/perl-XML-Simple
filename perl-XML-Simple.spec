@@ -14,6 +14,7 @@ Source:     http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.b
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
+Buildrequires:	perl(XML::SAX)
 BuildArch:  	noarch
 BuildRoot:  	%{_tmppath}/%{name}-%{version}
 
