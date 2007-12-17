@@ -16,7 +16,6 @@ Buildrequires:	perl-devel
 %endif
 Buildrequires:	perl(XML::SAX)
 BuildArch:  	noarch
-BuildRoot:  	%{_tmppath}/%{name}-%{version}
 
 %description
 XML::Simple is a trivial perl API to manipulate XML.
