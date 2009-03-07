@@ -1,7 +1,7 @@
 %define module 	XML-Simple
 %define	name	perl-%{module}
 %define version 2.18
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name: 		%{name}
 Version: 	%{version}
