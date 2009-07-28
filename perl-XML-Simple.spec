@@ -1,28 +1,28 @@
-%define module 	XML-Simple
-%define	name	perl-%{module}
-%define version 2.18
-%define release %mkrel 4
+%define upstream_name 	 XML-Simple
+%define upstream_version 2.18
 
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Name: 		perl-%{upstream_name}
+Version: 	%perl_convert_version %{upstream_version}
+Release: 	%mkrel 1
+
 Summary:	Easy API to maintain XML (esp config files)
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}/
-Source:     http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:    http://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
 Buildrequires:	perl(XML::SAX)
-BuildArch:  	noarch
-BuildRoot:  	%{_tmppath}/%{name}-%{version}
+BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 XML::Simple is a trivial perl API to manipulate XML.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
