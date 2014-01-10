@@ -1,2 +1,4 @@
+removed_sources:
+  XML-Simple-2.18.tar.bz2: 9dd0bf9646c091a28705cd35e36642eb66b94819
 sources:
-  "XML-Simple-2.18.tar.bz2": 9dd0bf9646c091a28705cd35e36642eb66b94819
+  XML-Simple-2.20.tar.gz: 2ececb0960deb51296916186000c63d55cc53092
