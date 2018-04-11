@@ -11,6 +11,8 @@ Url:		http://search.cpan.org/dist/%{modname}/
 Source0:	http://www.cpan.org/modules/by-module/XML/XML-Simple-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
+BuildRequires:	perl-Test
+BuildRequires:	perl-Test-Simple
 BuildRequires:	perl(XML::SAX)
 
 %description
