@@ -1,10 +1,10 @@
 %define modname	XML-Simple
-%define modver 2.20
+%define modver 2.25
 
 Summary:	Easy API to maintain XML (esp config files)
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	8
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
