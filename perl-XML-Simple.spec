@@ -3,12 +3,12 @@
 
 Summary:	Easy API to maintain XML (esp config files)
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	4
+Version:	%{modver}
+Release:	5
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}/
-Source0:	http://www.cpan.org/modules/by-module/XML/XML-Simple-%{modver}.tar.gz
+Url:		https://github.com/grantm/xml-simple
+Source0:	https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-Simple-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
